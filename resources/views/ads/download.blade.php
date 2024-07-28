@@ -28,10 +28,10 @@
 
     <section class="bg-[#028A7C] py-20 h-screen">
       <div class="container mx-auto">
-        <div class="bg-gray-200 py-10 w-full text-center rounded-md">AD</div>
+        <div class="bg-gray-200 py-10 w-full text-center rounded-md">{!! !empty($ads[0]->adCode) ? $ads[0]->adCode : null !!}</div>
         <div class="mt-10 flex flex-col items-center justify-center relative">
           <div>
-            <div class="ml-20">{{$qr}}</div>
+            <div class="ml-20"><img src='{{asset('/qrcodes/'.$filename.'.png') }}'/></div>
             <div class="flex items-center gap-6 mt-6">
               <div
                 class="bg-white text-center px-10 py-2 rounded-md text-[#009788] font-bold"
@@ -54,19 +54,19 @@
                 EPS
               </div>
               <div>
-                <img src="/images/white-share.png" alt="" class="w-12" />
+                <img src="{{ asset('front-end/images/white-share.png') }}" alt="" class="w-12" />
               </div>
             </div>
           </div>
           <div
             class="bg-gray-200 px-10 h-full text-center rounded-md absolute top-0 left-0"
           >
-            AD
+          {!! !empty($ads[1]->adCode) ? $ads[1]->adCode : null !!}
           </div>
           <div
             class="bg-gray-200 px-10 h-full text-center rounded-md absolute top-0 right-0"
           >
-            AD
+          {!! !empty($ads[2]->adCode) ? $ads[2]->adCode : null !!}
           </div>
         </div>
       </div>

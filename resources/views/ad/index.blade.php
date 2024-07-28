@@ -1,4 +1,4 @@
-@extends('voyager::master')
+<!-- @extends('voyager::master')
 
 @section('page_title', __('voyager::generic.viewing').' '.__('Ad Center'))
 
@@ -162,4 +162,4 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-@stop
+@stop -->

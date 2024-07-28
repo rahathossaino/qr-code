@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\AdCenter as ModelsAdCenter;
 use Illuminate\Http\Request;
 
-class Adcenter extends Controller
+class AdController extends Controller
 {
     public function index(){
         $tables=ModelsAdCenter::all();
